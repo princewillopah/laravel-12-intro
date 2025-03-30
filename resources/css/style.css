@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+/* nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #444;
+}
+nav ul li {
+    padding: 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+}
+nav ul li a:hover {
+    background-color: #555;
+} */
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Pushes left and right sections apart */
+    align-items: center;
+    padding: 10px 20px;
+    background: #444;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-left {
+    margin-right: auto; /* Pushes it to the left */
+}
+
+.nav-right {
+    margin-left: auto; /* Pushes it to the right */
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+nav ul li button {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    background: #555;
+    padding: 10px 20px;
+    margin: 0 3px;
+    text-decoration: none;
+    border: none;
+    /* transition: 0.3s ease-in-out; */
+}
+
+main {
+    padding: 20px;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: flex-start; */
+}
+
+/* for the programmer page */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.create-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-btn:hover {
+    background-color: #0056b3;
+}
+

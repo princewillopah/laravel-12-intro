@@ -1,0 +1,13 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Custom SCSS
+@import 'custom.scss';
+@import 'profile-page.scss';
+@import 'coders-page.scss';
+@import 'create-coder.scss';
+
+// Custom CSS
+@import '../css/style.css';
+
+// @import '../../node_modules/bootstrap/scss/bootstrap.scss';  // Bootstrap
+// @import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';

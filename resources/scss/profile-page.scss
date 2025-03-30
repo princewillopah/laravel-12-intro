@@ -1,0 +1,340 @@
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    transition: background 0.4s ease-in-out;
+    color: #333;
+}
+
+// .profile-container {
+//     max-width: 800px;
+//     margin: 40px auto;
+//     background: #fff;
+//     border-radius: 10px;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//     padding: 20px;
+//     overflow: hidden;
+// }
+
+// .profile-header {
+//     text-align: center;
+//     padding-bottom: 20px;
+//     border-bottom: 2px solid #eee;
+
+//     .profile-image {
+//         width: 120px;
+//         height: 120px;
+//         border-radius: 50%;
+//         border: 4px solid #007bff;
+//     }
+
+//     h1 {
+//         font-size: 26px;
+//         color: #333;
+//         margin: 10px 0;
+//     }
+
+//     .age-sex {
+//         color: #666;
+//         font-size: 14px;
+//     }
+// }
+
+// .profile-section {
+//     padding: 20px;
+//     border-bottom: 1px solid #eee;
+
+//     &:last-child {
+//         border-bottom: none;
+//     }
+
+//     h2 {
+//         font-size: 20px;
+//         color: #007bff;
+//         border-left: 5px solid #007bff;
+//         padding-left: 10px;
+//         margin-bottom: 10px;
+//     }
+
+//     p {
+//         font-size: 16px;
+//         color: #333;
+//         line-height: 1.5;
+//     }
+
+//     .skills-list {
+//         display: flex;
+//         flex-wrap: wrap;
+//         list-style: none;
+//         padding: 0;
+
+//         li {
+//             background: #007bff;
+//             color: white;
+//             padding: 8px 12px;
+//             border-radius: 5px;
+//             margin: 5px;
+//             font-size: 14px;
+//             font-weight: 600;
+//         }
+//     }
+// }
+
+// .company-section {
+//     background: #f1f5f9;
+//     border-radius: 8px;
+//     padding: 15px;
+// }
+
+// .final-review {
+//     background: #e3f2fd;
+//     border-radius: 8px;
+//     padding: 15px;
+//     font-style: italic;
+// }
+
+//////////////////////////////////////////
+/// 
+/// 
+//////Dark Mode Styling
+.dark-mode {
+    background: #121212;
+    color: #f8f9fa;
+
+    .toggle-mode {
+        background: teal;
+        // color: white;
+        // border: none;
+        // padding: 10px 15px;
+        // border-radius: 5px;
+        // cursor: pointer;
+        // display: block;
+        // margin: 10px auto;
+        // font-size: 14px;
+        // transition: background 0.3s;
+    
+        &:hover {
+            background: rgb(2, 61, 61);
+        }
+    }
+
+    .profile-container {
+        background: #1e1e1e;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+
+        
+    }
+
+    .profile-header {
+        border-bottom: 2px solid #333;
+        h1 {
+            color: #d3d1d1;
+        }
+    
+        .age-sex {
+            color: #8a8888;
+            font-size: 14px;
+        }
+        .profile-image {
+            border: 4px solid teal;
+        }
+    }
+
+    .profile-section {
+        border-bottom: 1px solid #333;
+        h2 {
+            color: teal;
+            border-left: 5px solid teal;
+
+        }
+    
+        p {
+            color: #eee;
+
+        }
+        &.company-section {
+            background: #333;
+        }
+    }
+
+    .skills-list li.skill-item {
+        background: teal;
+        color: white;
+        &:hover {
+            transform: scale(1.1);
+            background: rgb(2, 56, 56);
+        }
+    }
+
+    .final-review {
+        background: #333;
+    }
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+// Dark Mode Toggle Button
+.toggle-mode {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    font-size: 14px;
+    transition: background 0.3s;
+
+    &:hover {
+        background: #0056b3;
+    }
+}
+
+.profile-header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    
+    .profile-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 4px solid #007bff;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    h1 {
+        font-size: 26px;
+        color: #333;
+        margin: 10px 0;
+        transition: color 0.3s;
+    }
+
+    .age-sex {
+        color: #666;
+        font-size: 14px;
+    }
+}
+
+.profile-section {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    h2 {
+        font-size: 20px;
+        color: #007bff;
+        border-left: 5px solid #007bff;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #333;
+        line-height: 1.5;
+        transition: color 0.3s;
+    }
+
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+
+        .skill-item {
+            background: #007bff;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin: 5px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, background 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+                background: #0056b3;
+            }
+            &.x{
+                background: teal;
+                &:hover {
+                    transform: scale(1.1);
+                    background: rgb(1, 80, 80);
+                }
+            }
+        }
+        // .skill-item.x {
+        //     background: teal;
+        //     color: white;
+        //     padding: 8px 12px;
+        //     border-radius: 5px;
+        //     margin: 5px;
+        //     font-size: 14px;
+        //     font-weight: 600;
+        //     cursor: pointer;
+        //     transition: transform 0.3s ease-in-out, background 0.3s;
+
+        //     &:hover {
+        //         transform: scale(1.1);
+        //         background: rgb(2, 83, 83);
+        //     }
+            
+        // }
+    }
+}
+
+// Company Section Styling
+.company-section {
+    background: #f1f5f9;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+// Final Review Styling
+.final-review {
+    background: #e3f2fd;
+    border-radius: 8px;
+    padding: 15px;
+    font-style: italic;
+    transition: background 0.3s ease-in-out;
+}
+
+// Animation for fade-in effect
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-container, .profile-section, .profile-header {
+    animation: fadeIn 0.6s ease-in-out;
+}

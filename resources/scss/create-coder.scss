@@ -1,0 +1,147 @@
+.coder-form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    h2 {
+        font-size: 24px;
+        color: #333;
+    }
+
+    p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+}
+
+.coder-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+
+            &:focus {
+                border-color: #007bff;
+                outline: none;
+            }
+        }
+
+        textarea {
+            height: 80px;
+            resize: vertical;
+        }
+    }
+
+    .btn-submit {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+            background: #0056b3;
+        }
+    }
+}
+.form-group.checkbox-group.xxx{
+
+ input{
+    width: 16px !important; 
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+ }
+}
+// eye icon
+// .password-container {
+//     position: relative;
+//     width: 100%;
+//     max-width: 500px; /* Match the form width */
+//     margin: auto;
+// }
+
+// .password-container input {
+//     width: 100%;
+//     padding-right: 40px; /* Space for the eye icon */
+// }
+
+// .password-container .toggle-password {
+//     position: absolute;
+//     right: 10px;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     cursor: pointer;
+//     font-size: 20px;
+//     color: black;
+// }
+
+.password-container {
+    position: relative; /* This makes the eye icon position relative to this container */
+    width: 100%;
+    max-width: 500px; /* Match the form width */
+    margin: auto;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px; /* Space for the eye icon */
+    height: 45px; /* Ensure input height is consistent */
+    line-height: 45px; /* Align text properly */
+}
+
+.password-container .toggle-password {
+    position: absolute;/* Distance from the right inside the container */
+    right: 10px;
+    top: 50%;/* Moves the top edge to the middle */
+    // transform: translateY(-50%); /* Ensures perfect vertical centering */
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+}
+
+// .checkbox-group {
+//     display: flex;
+//     align-items: center;
+//     gap: 8px;  /* Adds spacing between checkbox and text */
+// }
+
+// .checkbox-group label {
+//     display: flex;
+//     align-items: center;
+//     cursor: pointer;
+// }
+
+// .checkbox-group input {
+//     width: 16px;
+//     height: 16px;
+//     margin-right: 5px; /* Adds space between checkbox and text */
+// }
