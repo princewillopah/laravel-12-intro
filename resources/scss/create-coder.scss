@@ -81,29 +81,8 @@
     transition: border-color 0.3s;
  }
 }
-// eye icon
-// .password-container {
-//     position: relative;
-//     width: 100%;
-//     max-width: 500px; /* Match the form width */
-//     margin: auto;
-// }
 
-// .password-container input {
-//     width: 100%;
-//     padding-right: 40px; /* Space for the eye icon */
-// }
-
-// .password-container .toggle-password {
-//     position: absolute;
-//     right: 10px;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     cursor: pointer;
-//     font-size: 20px;
-//     color: black;
-// }
-
+//////// Login Password input CSS  //////////////////
 .password-container {
     position: relative; /* This makes the eye icon position relative to this container */
     width: 100%;
@@ -124,10 +103,37 @@
     top: 50%;/* Moves the top edge to the middle */
     // transform: translateY(-50%); /* Ensures perfect vertical centering */
     cursor: pointer;
-    font-size: 20px;
-    color: black;
+    font-size: 18px;
+    color: #666;
+    z-index: 2;
+    background: white;
+    padding: 0 5px;
+
+   
+}
+.toggle-password:hover {
+    color: #333;
+}
+///////////////////////////////////
+.form-group.checkbox-group {
+    display: flex;
+    // align-items: center;
+    gap: 5px;
 }
 
+.form-group.checkbox-group input {
+    width: 16px !important;
+    padding: 0;
+    margin: 0;
+}
+
+.form-group.checkbox-group label {
+    font-size: 14px;
+    color: #444;
+}
+
+
+//////////////////////////////
 // .checkbox-group {
 //     display: flex;
 //     align-items: center;

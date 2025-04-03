@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
         // $this->call(CoderSeeder::class); // Call your coders table seeder
         $this->call([
+            UserSeeder::class,
             CompanySeeder::class,  // we need this created first since CoderSeeder depends on CompanySeeder for its foreign key
             CoderSeeder::class
         ]);
