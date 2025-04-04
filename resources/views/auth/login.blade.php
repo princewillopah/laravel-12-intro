@@ -13,28 +13,16 @@
                 @enderror
             </div>
 
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" 
-                    class="@error('password') is-invalid @enderror" required>
-                @error('password') 
-                    <div class="alert alert-danger">{{ $message }}</div> 
-                @enderror
 
-                    <!-- <span id="togglePassword" 
-                        style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
-                        cursor: pointer; width: 20px; height: 20px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" 
-                            viewBox="0 0 24 24">
-                            <path d="M12 4.5c-4.8 0-9.2 3.1-10.8 7.5 1.6 4.4 6 7.5 10.8 7.5s9.2-3.1 10.8-7.5c-1.6-4.4-6-7.5-10.8-7.5zm0 13c-2.9 0-5.3-2.4-5.3-5.3S9.1 7 12 7s5.3 2.4 5.3 5.3S14.9 17.5 12 17.5zm0-8.8c-2 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5z"/>
-                        </svg>
-                    </span> -->
-                    
-                    <i id="togglePassword" class="fa fa-eye" 
-                    style="position: absolute; right: 380px; top: 47%; transform: translateY(-50%); 
-                    cursor: pointer; font-size: 18px; color: black;">
-                    </i>
+            <div class="form-group password-container">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="@error('password') is-invalid @enderror" required>
+                @error('password') <div class="alert alert-danger">{{ $message }}</div>  @enderror
+                <i id="togglePassword" class="fa fa-eye toggle-password"></i>
             </div>
+            
+
+
 
             <!-- Properly aligned Remember Me checkbox -->
             <div class="form-group checkbox-group xxx">
@@ -64,5 +52,6 @@
             this.classList.toggle("fa-eye-slash");
         });
     </script>
+
 
 </x-layout>
